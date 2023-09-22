@@ -1,9 +1,11 @@
 package com.sm.es;
 import java.time.LocalDateTime;
-
-import org.springframework.data.annotation.Id;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+
+
+
 @Entity
 public class Employee {
 	private int id;
@@ -78,15 +80,18 @@ public void setDesignation(String designation) {
 }
 
 
-
 @Override
 public String toString() {
-	return "employee [id=" + id + ", name=" + name + ", dob=" + dob + ", salary=" + salary + ", address=" + address
-			+ ", designation=" + designation + ", getId()=" + getId() + ", getName()="
-			+ getName() + ", getDob()=" + getDob() + ", getSalary()=" + getSalary() + ", getAddress()=" + getAddress()
-			+ ", getDesignation()=" + getDesignation() + ", getClass()=" + getClass()
-			+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + ", salary=" + salary + ", address=" + address
+			+ ", designation=" + designation + ", getId()=" + getId() + ", getName()=" + getName() + ", getDob()="
+			+ getDob() + ", getSalary()=" + getSalary() + ", getAddress()=" + getAddress() + ", getDesignation()="
+			+ getDesignation() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+			+ super.toString() + "]";
 }
+
+
+
+
 
 
 }

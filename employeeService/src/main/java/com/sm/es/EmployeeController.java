@@ -43,8 +43,8 @@ public class EmployeeController {
 	@PutMapping("/employee/{id}")
 	public ResponseEntity<?> update(@RequestBody Employee employee,@PathVariable Integer id){
 		try {
-			Employee existemployee = service.get(id);
-			service.save(existemployee);
+			Employee existEmployee = service.get(id);
+			service.save(existEmployee);
 			return new ResponseEntity<>(HttpStatus.OK);
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
